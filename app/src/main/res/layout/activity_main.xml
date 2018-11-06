@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent3"
+    android:padding="0dp"
+    tools:context=".MainActivity">
+     <RelativeLayout
+
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/colorAccent"
+         android:id="@+id/relativeLayout"
+         android:padding="9dp">
+    <TextView
+        android:id="@+id/MyTv"
+        android:text = "@string/MyTV"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "30sp"
+        android:color="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignTop="@+id/Speaker_Volume"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:id="@+id/TV_Power"
+        android:text = "TVPower:"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignStart="@+id/CurrentChannel" />
+
+    <TextView
+        android:id="@+id/Speaker_Volume"
+        android:text = "@string/SpeakerVolume"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/TV_Power"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/CurrentChannel"
+        android:text = "@string/Current_Channel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/Speaker_Volume"
+        android:layout_alignEnd="@+id/Speaker_Volume" />
+
+    <TextView
+        android:id="@+id/TV_PowerStatus"
+        android:text = "@string/TV_PowerStatus"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:layout_alignBaseline="@+id/TV_Power"
+        android:layout_alignBottom="@+id/TV_Power"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+    <TextView
+        android:id="@+id/SpeakerVolumeStatus"
+        android:text = "@string/SpeakerVolumeStatus"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_below="@+id/TV_PowerStatus"
+        android:layout_alignStart="@+id/TV_PowerStatus"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/Current_ChannelStatus"
+        android:text = "@string/Current_ChannelStatus"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:layout_alignBaseline="@+id/CurrentChannel"
+        android:layout_alignBottom="@+id/CurrentChannel"
+        android:layout_alignStart="@+id/SpeakerVolumeStatus"
+        android:layout_alignEnd="@+id/SpeakerVolumeStatus"
+        android:textColor="@color/colorPrimaryDark"/>
+
+     </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/ChrisRemoteControl"
+        android:text = "@string/ChrisRemoteControl"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:textStyle="bold"
+        android:color="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/Button0"
+        android:text ="@string/Button_0"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/ChrisRemoteControl"
+        android:layout_alignStart="@+id/ChrisRemoteControl" />
+    <Button
+        android:id="@+id/Button1"
+        android:text ="@string/Button_1"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button0"
+        android:layout_alignBottom="@+id/Button0"
+        android:layout_toEndOf="@+id/Button0" />
+
+    <Button
+        android:id="@+id/Button2"
+        android:text ="@string/Button_2"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button1"
+        android:layout_alignBottom="@+id/Button1"
+        android:layout_toEndOf="@+id/Button1" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:text ="@string/Button_3"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button0"
+        android:layout_alignStart="@+id/Button0" />
+
+    <Button
+        android:id="@+id/Button4"
+        android:text ="@string/Button_4"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button3"
+        android:layout_alignBottom="@+id/Button3"
+        android:layout_toEndOf="@+id/Button3" />
+
+    <Button
+        android:id="@+id/Button5"
+        android:text ="@string/Button_5"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button2"
+        android:layout_toEndOf="@+id/Button1" />
+    <Button
+        android:id="@+id/Button6"
+        android:text ="@string/Button_6"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button3"
+        android:layout_alignStart="@+id/Button3" />
+
+    <Button
+        android:id="@+id/Button7"
+        android:text ="@string/Button_7"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button6"
+        android:layout_alignBottom="@+id/Button6"
+        android:layout_toEndOf="@+id/Button6" />
+
+    <Button
+        android:id="@+id/Button8"
+        android:text ="@string/Button_8"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button7"
+        android:layout_alignBottom="@+id/Button7"
+        android:layout_toEndOf="@+id/Button7" />
+
+    <Button
+        android:id="@+id/Button9"
+        android:text ="@string/Button_9"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button6"
+        android:layout_alignStart="@+id/Button6" />
+
+    <Button
+        android:id="@+id/Channel_UP"
+        android:text ="@string/CHANNEL_UP"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Button9"
+        android:layout_alignBottom="@+id/Button9"
+        android:layout_toEndOf="@+id/Button9" />
+    <Button
+        android:id="@+id/Channel_DOWN"
+        android:text ="@string/CHANNEL_DOWN"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Channel_UP"
+        android:layout_alignBottom="@+id/Channel_UP"
+        android:layout_toEndOf="@+id/Button7" />
+
+    <Button
+        android:id="@+id/ABC"
+        android:text ="@string/ABC"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button9"
+        android:layout_alignStart="@+id/Button9" />
+    <Button
+        android:id="@+id/NBC"
+        android:text ="@string/NBC"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ABC"
+        android:layout_alignBottom="@+id/ABC"
+        android:layout_below="@+id/Channel_UP"
+        android:layout_toEndOf="@+id/ABC" />
+
+    <Button
+        android:id="@+id/CBS"
+        android:text ="@string/CBS"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NBC"
+        android:layout_alignBottom="@+id/NBC"
+        android:layout_toEndOf="@+id/NBC" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOn="Y"
+        android:textOff="N"
+        android:onClick="onSwitchClicked"
+        android:tag="switch2"
+        android:layout_below="@+id/ChrisRemoteControl"
+        android:layout_alignStart="@+id/ChrisRemoteControl" />
+
+    <TextView
+        android:id="@+id/PowerText"
+        android:text = "@string/PowerText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "16sp"
+        android:color="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBaseline="@+id/switch2"
+        android:layout_alignBottom="@+id/switch2"
+        android:layout_alignStart="@+id/VolumeText" />
+    <TextView
+    android:id="@+id/VolumeText"
+    android:text = "@string/VolumeText"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize = "16sp"
+    android:color="@color/colorPrimary"
+    android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="16dp"
+        android:layout_above="@+id/Button1"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="25"
+        android:layout_above="@+id/Button1"
+        android:layout_alignStart="@+id/Button0"
+        android:color="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/Favorite_Channel"
+        android:text = "@string/Favorite_Channel"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "16sp"
+        android:color="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_alignBottom="@+id/ABC"
+        android:layout_alignStart="@+id/VolumeText" />
+
+    <Button
+        android:id="@+id/SwitchToDVR"
+        android:text ="@string/SwitchToDVR"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Configure"
+        android:layout_alignBottom="@+id/Configure"
+        android:layout_toStartOf="@+id/Configure" />
+
+    <Button
+        android:id="@+id/Configure"
+        android:text ="@string/Configure"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/NBC"
+        android:layout_alignEnd="@+id/CBS" />
+</RelativeLayout>
+
+

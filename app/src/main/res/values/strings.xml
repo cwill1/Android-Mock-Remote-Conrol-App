@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">MockRemoteControlApp</string>
+    <string name="MyTV">MyTV</string>
+    <string name="TVPower">TV Power:</string>
+    <string name="TV_PowerStatus">Off</string>
+    <string name="SpeakerVolume">Speaker Volume:</string>
+    <string name="SpeakerVolumeStatus"> </string>
+    <string name="Current_Channel">Current Channel:</string>
+    <string name="Current_ChannelStatus"> </string>
+    <string name="WhiteBackground">0</string>
+    <string name="ChrisRemoteControl">Chris Remote Control</string>
+    <string name="Power">power</string>
+    <string name="PowerSwitch">PowerSwitch</string>
+    <string name="PowerText">Power</string>
+    <string name="Volume">VolumeSwitch</string>
+    <string name="VolumeText">Volume</string>
+    <string name="Channel">ChannelSwitch</string>
+    <string name="Favorite_Channel">Favorite\nChannel</string>
+    <string name="Button_0">0</string>
+    <string name="Button_1">1</string>
+    <string name="Button_2">2</string>
+    <string name="Button_3">3</string>
+    <string name="Button_4">4</string>
+    <string name="Button_5">5</string>
+    <string name="Button_6">6</string>
+    <string name="Button_7">7</string>
+    <string name="Button_8">8</string>
+    <string name="Button_9">9</string>
+    <string name="CHANNEL_UP">CH+</string>
+    <string name="CHANNEL_DOWN">CH-</string>
+    <string name="ABC">ABC</string>
+    <string name="NBC">NBC</string>
+    <string name="CBS">CBS</string>
+    <string name="SwitchToDVR">Switch To DVR</string>
+    <string name="Configure">Configure</string>
+
+    //MyDVR
+    <string name="MyDVR">My DVR</string>
+    <string name="DVRPower">DVR Power:</string>
+    <string name="State">State:</string>
+    <string name="PowerDVR">Power</string>
+    <string name="Play">Play</string>
+    <string name="Stop">Stop</string>
+    <string name="Pause">Pause</string>
+    <string name="FastForward">FastForward</string>
+    <string name="Record">Record</string>
+    <string name="SwitchToTV">Switch To TV</string>
+    <string name="DVRRemoteControl">DVR Remote Control</string>
+
+    //Configure favorite channels
+    <string name="ConfigureFavoriteChannels">Configure Favorite Channels</string>
+    <string name="FavoriteChannelButton">Favorite\nChannel\nButton</string>
+    <string name="Left">Left</string>
+    <string name="Middle">Middle</string>
+    <string name="Right">Right</string>
+    <string name="Label">Label</string>
+    <string name="ChannelRemoteConfigure">Channel</string>
+    <string name="Button_0_">0</string>
+    <string name="Button_1_">1</string>
+    <string name="Button_2_">2</string>
+    <string name="Button_3_">3</string>
+    <string name="Button_4_">4</string>
+    <string name="Button_5_">5</string>
+    <string name="Button_6_">6</string>
+    <string name="Button_7_">7</string>
+    <string name="Button_8_">8</string>
+    <string name="Button_9_">9</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Save">Save</string>
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent3"
+    android:padding="0dp"
+    tools:context=".MyDVR">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent1"
+        android:id="@+id/relativeLayoutDVR"
+        android:padding="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/MyTv"
+            android:text = "@string/MyDVR"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize = "30sp"
+            android:color="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginStart="11dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/TV_Power"
+            android:text = "@string/DVRPower"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize = "20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/MyTv"
+            android:layout_marginStart="31dp" />
+
+        <TextView
+            android:id="@+id/Speaker_Volume"
+            android:text = "@string/State"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize = "20sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@+id/TV_Power"
+            android:layout_alignStart="@+id/TV_Power" />
+
+
+
+        <TextView
+            android:id="@+id/DVRPowerState"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize = "20sp"
+            android:layout_alignBaseline="@+id/TV_Power"
+            android:layout_alignBottom="@+id/TV_Power"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+
+        <TextView
+            android:id="@+id/DVRTextViewState"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Stopped"
+            android:textSize = "17sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginEnd="11dp"
+            android:layout_below="@+id/DVRPowerState"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/Current_ChannelStatus"
+            android:text = "@string/Current_ChannelStatus"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize = "20sp"
+            android:layout_alignBaseline="@+id/CurrentChannel"
+            android:layout_alignBottom="@+id/CurrentChannel"
+            android:layout_alignStart="@+id/SpeakerVolumeStatus"
+            android:layout_alignEnd="@+id/SpeakerVolumeStatus"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/ChrisRemoteControl"
+        android:text = "@string/DVRRemoteControl"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "20sp"
+        android:textStyle="bold"
+        android:color="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/relativeLayoutDVR"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOn="Y"
+        android:textOff="N"
+        android:theme="@style/SwitchTheme"
+        android:onClick="onSwitchClicked"
+        android:tag="switch3"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/ChrisRemoteControl"
+        android:layout_toEndOf="@+id/PowerText" />
+
+    <TextView
+        android:id="@+id/PowerText"
+        android:text = "@string/PowerText"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize = "16sp"
+        android:color="@color/colorPrimary"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginStart="27dp"
+        android:layout_alignBaseline="@+id/switch3"
+        android:layout_alignBottom="@+id/switch3"
+        android:layout_alignStart="@+id/ChrisRemoteControl" />
+    <Button
+        android:id="@+id/ButtonPlay"
+        android:text ="Play"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/switch3"
+        android:layout_toStartOf="@+id/ButtonStop" />
+
+    <Button
+        android:id="@+id/ButtonStop"
+        android:text ="Stop"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ButtonPlay"
+        android:layout_alignBottom="@+id/ButtonPlay"
+        android:layout_alignEnd="@+id/switch3" />
+
+    <Button
+        android:id="@+id/ButtonPause"
+        android:text ="Pause"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ButtonStop"
+        android:layout_alignBottom="@+id/ButtonStop"
+        android:layout_toEndOf="@+id/ButtonStop" />
+
+
+    <Button
+        android:id="@+id/ButtonFastForward"
+        android:text ="Fast Forward"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonPlay"
+        android:layout_toStartOf="@+id/ButtonFastRewind" />
+    <Button
+        android:id="@+id/ButtonFastRewind"
+        android:text ="Fast Rewind"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonStop"
+        android:layout_alignStart="@+id/switch3" />
+
+    <Button
+        android:id="@+id/ButtonRecord"
+        android:text ="Record"
+        android:textSize = "20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ButtonFastForward"
+        android:layout_alignStart="@+id/ButtonFastForward" />
+
+    <Button
+        android:id="@+id/ButtonSwitchToTV"
+        android:text ="Switch To TV"
+        android:textSize = "20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+
+
+</RelativeLayout>
+
